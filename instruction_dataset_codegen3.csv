@@ -1,0 +1,451 @@
+input,instruction,output
+You will need to create a bar graph with the gender on the x- axis and churn on the y- axis of owndata dataset.,Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['gender'])"
+"This owndata is Telecom customer dataset and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a bar graph with the SeniorCitizen on the x- axis and count on the y- axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['SeniorCitizen'])"
+"This owndata is Telecom customer dataset and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a bar graph with the Partner on the x- axis and count on the y- axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['Partner'])"
+"This owndata is Telecom customer dataset and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a scatter plot with the tenure on the x- axis and churn on the y- axis.",Generate a python script to visualize this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='tenure', y ='Churn', labels ={ 'tenure':'tenure','Churn':'Churn'}) 
+fig.show ()"
+"This owndata is Telecom customer dataset and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a scatter plot with the MonthlyCharges on the x- axis and churn on the y- axis.",Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='MonthlyCharges', y ='Churn', labels ={ 'MonthlyCharges':'MonthlyCharges','Churn':'Churn'}) 
+fig.show ()"
+You will need to create a scatter plot with the TotalCharges on the x- axis and churn on the y- axis of owndata dataset.,Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='TotalCharges', y ='Churn', labels ={ 'TotalCharges':'TotalCharges','Churn':'Churn'}) 
+fig.show ()"
+"This owndata is Telecom customer dataset and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a histrogram with the tenure on the x- axis and count on the y- axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['tenure'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"This owndata is Telecom customer dataset and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a histrogram with the MonthlyCharges on the x- axis and count on the y- axis.",Generate a python script to visualize this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+You will need to create a histrogram with the TotalCharges on the x-axis and count on the y-axis of owndata dataset.,Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"This dataset is Telco for churn prediciton and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a bar graph with the  gender on the x- axis and Churn on the y- axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['gender'], data=df, hue='Churn')
+plt.show()"
+"This dataset is Telco for churn prediciton and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a bar graph with Dependents on the x- axis and Churn on the y- axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['Dependents'], data=df, hue='Churn')
+plt.show()"
+You will need to create a bar graph with the gender on the x- axis and churn on the y- axis of owndata dataset.,Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['gender'])"
+You will need to create a bar graph with PhoneService on the x- axis and Churn on the y-axis of owndata dataset.,Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['PhoneService'], data=df, hue='Churn')
+plt.show()"
+"Generate a bar chart using the owndata dataset, with gender represented on the horizontal (x-axis) and churn on the vertical (y-axis).",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['gender'])"
+"Create a bar graph utilizing the owndata dataset, plotting gender on the x-axis and churn on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['gender'])"
+"Produce a bar chart based on the owndata dataset, where the x-axis displays gender and the y-axis shows churn.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['gender'])"
+"Construct a bar graph with the owndata dataset, depicting gender on the x-axis and representing churn on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['gender'])"
+"Develop a bar chart for the owndata dataset, where gender is plotted along the x-axis and churn is displayed on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['gender'])"
+"This owndata is Telecom customer dataset and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a bar graph with the SeniorCitizen on the x- axis and count on the y- axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['SeniorCitizen'])"
+"The owndata is a dataset that pertains to telecom customers and incorporates various columns including customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your assignment is to create a bar chart where SeniorCitizen is represented on the x-axis, while the y-axis displays the count.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['SeniorCitizen'])"
+"With the owndata, which is a dataset related to telecom customers and contains columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, you'll be tasked with producing a bar graph. This graph should have SeniorCitizen on the x-axis and count on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['SeniorCitizen'])"
+"Utilizing the owndata, a dataset that pertains to telecom customers and encompasses attributes such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, your objective is to construct a bar chart. This chart should feature SeniorCitizen on the x-axis and count on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['SeniorCitizen'])"
+"In the owndata, which is a dataset related to telecom customers containing customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn columns, you should generate a bar graph where SeniorCitizen is placed on the x-axis, and count is depicted on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['SeniorCitizen'])"
+"The owndata is a dataset related to telecom customers, comprising columns like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your task is to craft a bar chart with SeniorCitizen on the x-axis and count on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['SeniorCitizen'])"
+"This owndata is Telecom customer dataset and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a bar graph with the Partner on the x- axis and count on the y- axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['Partner'])"
+"The owndata is a dataset related to telecommunications customers, featuring columns like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your task is to generate a bar chart, placing Partner on the x-axis and count on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['Partner'])"
+"In the owndata, which is a dataset pertaining to telecom customers and includes attributes such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, you should craft a bar graph with Partner on the x-axis and count on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['Partner'])"
+"Using the owndata, a dataset associated with telecommunications customers that encompasses customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn columns, your goal is to construct a bar chart. This chart should depict Partner on the x-axis and count on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['Partner'])"
+"With the owndata, a dataset centered around telecom customers and featuring customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn columns, you'll be required to create a bar graph. In this graph, Partner should be positioned on the x-axis, while the y-axis represents the count.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['Partner'])"
+"The owndata is a dataset pertaining to telecommunications customers, including various columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your task involves producing a bar chart where Partner is featured on the x-axis, and the count is displayed on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['Partner'])"
+"This owndata is Telecom customer dataset and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a scatter plot with the tenure on the x- axis and churn on the y- axis.",Generate a python script to visualize this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='tenure', y ='Churn', labels ={ 'tenure':'tenure','Churn':'Churn'}) 
+fig.show ()"
+"The owndata represents a telecommunications customer dataset, including columns like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your task involves generating a scatter plot, where tenure is plotted on the x-axis and churn on the y-axis.",Generate a python script to visualize this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='tenure', y ='Churn', labels ={ 'tenure':'tenure','Churn':'Churn'}) 
+fig.show ()"
+"In the owndata, which is a dataset related to telecom customers and contains attributes such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, you should create a scatter plot. This scatter plot should have tenure along the x-axis and churn along the y-axis.",Generate a python script to visualize this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='tenure', y ='Churn', labels ={ 'tenure':'tenure','Churn':'Churn'}) 
+fig.show ()"
+"Using the owndata, a dataset focused on telecommunications customers and featuring columns like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, your objective is to craft a scatter plot. In this plot, tenure should be represented on the x-axis, and churn should be indicated on the y-axis.",Generate a python script to visualize this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='tenure', y ='Churn', labels ={ 'tenure':'tenure','Churn':'Churn'}) 
+fig.show ()"
+"With the owndata, a dataset related to telecom customers and encompassing customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn columns, you will be tasked with creating a scatter plot. This scatter plot should depict tenure on the x-axis and churn on the y-axis.",Generate a python script to visualize this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='tenure', y ='Churn', labels ={ 'tenure':'tenure','Churn':'Churn'}) 
+fig.show ()"
+"The owndata is a dataset related to telecommunications customers, which includes a variety of columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your assignment involves generating a scatter plot where tenure is situated on the x-axis, while churn is presented on the y-axis.",Generate a python script to visualize this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='tenure', y ='Churn', labels ={ 'tenure':'tenure','Churn':'Churn'}) 
+fig.show ()"
+"This owndata is Telecom customer dataset and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a scatter plot with the MonthlyCharges on the x- axis and churn on the y- axis.",Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='MonthlyCharges', y ='Churn', labels ={ 'MonthlyCharges':'MonthlyCharges','Churn':'Churn'}) 
+fig.show ()"
+"The owndata represents a telecommunications customer dataset, containing columns like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your task is to generate a scatter plot, with MonthlyCharges plotted on the x-axis and churn on the y-axis.",Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='MonthlyCharges', y ='Churn', labels ={ 'MonthlyCharges':'MonthlyCharges','Churn':'Churn'}) 
+fig.show ()"
+"In the owndata, which is a dataset related to telecom customers and includes attributes such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, you should create a scatter plot. This scatter plot should have MonthlyCharges on the x-axis and churn on the y-axis.",Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='MonthlyCharges', y ='Churn', labels ={ 'MonthlyCharges':'MonthlyCharges','Churn':'Churn'}) 
+fig.show ()"
+"Using the owndata, a dataset focused on telecommunications customers and featuring columns like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, your goal is to craft a scatter plot. In this plot, MonthlyCharges should be represented on the x-axis, and churn should be indicated on the y-axis.",Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='MonthlyCharges', y ='Churn', labels ={ 'MonthlyCharges':'MonthlyCharges','Churn':'Churn'}) 
+fig.show ()"
+"With the owndata, a dataset related to telecom customers and encompassing customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn columns, you will be tasked with creating a scatter plot. This scatter plot should depict MonthlyCharges on the x-axis and churn on the y-axis.",Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='MonthlyCharges', y ='Churn', labels ={ 'MonthlyCharges':'MonthlyCharges','Churn':'Churn'}) 
+fig.show ()"
+"The owndata is a dataset related to telecommunications customers, which includes various columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your assignment involves generating a scatter plot where MonthlyCharges are situated on the x-axis, while churn is presented on the y-axis.",Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='MonthlyCharges', y ='Churn', labels ={ 'MonthlyCharges':'MonthlyCharges','Churn':'Churn'}) 
+fig.show ()"
+You will need to create a scatter plot with the TotalCharges on the x- axis and churn on the y- axis of owndata dataset.,Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='TotalCharges', y ='Churn', labels ={ 'TotalCharges':'TotalCharges','Churn':'Churn'}) 
+fig.show ()"
+"Generate a scatter plot using the owndata dataset, with TotalCharges plotted on the x-axis and churn on the y-axis.",Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='TotalCharges', y ='Churn', labels ={ 'TotalCharges':'TotalCharges','Churn':'Churn'}) 
+fig.show ()"
+"In the owndata dataset, create a scatter plot featuring TotalCharges on the x-axis and churn on the y-axis.",Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='TotalCharges', y ='Churn', labels ={ 'TotalCharges':'TotalCharges','Churn':'Churn'}) 
+fig.show ()"
+"Craft a scatter plot based on the owndata dataset, where the x-axis represents TotalCharges, and the y-axis represents churn.",Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='TotalCharges', y ='Churn', labels ={ 'TotalCharges':'TotalCharges','Churn':'Churn'}) 
+fig.show ()"
+Produce a scatter plot with TotalCharges on the x-axis and churn on the y-axis using the owndata dataset.,Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='TotalCharges', y ='Churn', labels ={ 'TotalCharges':'TotalCharges','Churn':'Churn'}) 
+fig.show ()"
+"Create a scatter plot using data from the owndata dataset, with TotalCharges displayed on the x-axis and churn on the y-axis.",Generate a python script to perform this action.,"import plotly.express as px
+df = owndata
+fig = px.scatter( df , x ='TotalCharges', y ='Churn', labels ={ 'TotalCharges':'TotalCharges','Churn':'Churn'}) 
+fig.show ()"
+"This owndata is Telecom customer dataset and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a histrogram with the tenure on the x- axis and count on the y- axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['tenure'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"The owndata represents a telecommunications customer dataset, featuring columns like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your task involves creating a histogram with tenure on the x-axis and count on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['tenure'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"In the owndata dataset, which pertains to telecom customers and includes attributes such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, you should construct a histogram. This histogram should have tenure displayed on the x-axis and count on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['tenure'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"Using the owndata, a dataset focused on telecommunications customers and containing columns like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, your goal is to generate a histogram. In this histogram, tenure should be represented on the x-axis, while count should be indicated on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['tenure'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"With the owndata, a dataset related to telecom customers and encompassing customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn columns, you will be required to create a histogram. This histogram should depict tenure on the x-axis and count on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['tenure'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"The owndata is a dataset related to telecommunications customers, which includes various columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your assignment involves generating a histogram where tenure is situated on the x-axis, while count is presented on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['tenure'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"This owndata is Telecom customer dataset and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a histrogram with the MonthlyCharges on the x- axis and count on the y- axis.",Generate a python script to visualize this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"The owndata represents a telecommunications customer dataset, including columns like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your task is to create a histogram with MonthlyCharges on the x-axis and count on the y-axis.",Generate a python script to visualize this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"In the owndata dataset, which relates to telecom customers and comprises attributes such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, your objective is to generate a histogram. This histogram should feature MonthlyCharges on the x-axis and count on the y-axis.",Generate a python script to visualize this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"Using the owndata, a dataset centered around telecommunications customers and containing columns like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, your goal is to craft a histogram. In this histogram, MonthlyCharges should be represented on the x-axis, while count should be indicated on the y-axis.",Generate a python script to visualize this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"With the owndata, a dataset related to telecom customers and encompassing customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn columns, you will be tasked with creating a histogram. This histogram should depict MonthlyCharges on the x-axis and count on the y-axis.",Generate a python script to visualize this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"The owndata is a dataset related to telecommunications customers, which includes various columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your assignment involves generating a histogram where MonthlyCharges are situated on the x-axis, while count is presented on the y-axis.",Generate a python script to visualize this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+You will need to create a histrogram with the TotalCharges on the x-axis and count on the y-axis of owndata dataset.,Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"Generate a histogram using the owndata dataset, with TotalCharges displayed on the x-axis and count represented on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"In the owndata dataset, create a histogram featuring TotalCharges on the x-axis and count on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"Construct a histogram based on the owndata dataset, where the x-axis represents TotalCharges, and the y-axis represents count.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+Produce a histogram with TotalCharges on the x-axis and count on the y-axis using the owndata dataset.,Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"Create a histogram using data from the owndata dataset, with TotalCharges on the x-axis and count on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+df['MonthlyCharges'].hist(figsize=(12,12),bins=20)
+plt.show()"
+"This dataset is Telco for churn prediciton and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a bar graph with the  gender on the x- axis and Churn on the y- axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['gender'], data=df, hue='Churn')
+plt.show()"
+"The dataset, known as Telco for churn prediction, consists of columns like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your task is to generate a bar graph with gender on the x-axis and Churn on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['gender'], data=df, hue='Churn')
+plt.show()"
+"In the Telco dataset used for churn prediction, which includes columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, your objective is to create a bar graph. This graph should feature gender on the x-axis and Churn on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['gender'], data=df, hue='Churn')
+plt.show()"
+"Using the Telco dataset, specifically designed for churn prediction and comprising attributes like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, your goal is to craft a bar graph. In this graph, gender should be represented on the x-axis, while Churn should be indicated on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['gender'], data=df, hue='Churn')
+plt.show()"
+"With the Telco dataset, aimed at churn prediction and encompassing customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn columns, you will be tasked with creating a bar graph. This bar graph should depict gender on the x-axis and Churn on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['gender'], data=df, hue='Churn')
+plt.show()"
+"The dataset, known as Telco for churn prediction, contains various columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your assignment involves generating a bar graph where gender is situated on the x-axis, while Churn is presented on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['gender'], data=df, hue='Churn')
+plt.show()"
+"This dataset is Telco for churn prediciton and has columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, Churn. You will need to create a bar graph with Dependents on the x- axis and Churn on the y- axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['Dependents'], data=df, hue='Churn')
+plt.show()"
+"In the Telco dataset, designed for predicting churn, which includes columns like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, your task is to generate a bar graph. This graph should have Dependents on the x-axis and Churn on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['Dependents'], data=df, hue='Churn')
+plt.show()"
+"Using the Telco dataset, specifically created for churn prediction and comprising attributes such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, your objective is to craft a bar graph. In this graph, Dependents should be represented on the x-axis, while Churn should be indicated on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['Dependents'], data=df, hue='Churn')
+plt.show()"
+"With the Telco dataset, aimed at predicting churn and encompassing customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn columns, your assignment is to create a bar graph. This bar graph should depict Dependents on the x-axis and Churn on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['Dependents'], data=df, hue='Churn')
+plt.show()"
+"The dataset, known as Telco for churn prediction, contains various columns such as customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn. Your task involves generating a bar graph where Dependents are situated on the x-axis, while Churn is presented on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['Dependents'], data=df, hue='Churn')
+plt.show()"
+"In the Telco dataset, which is used for predicting churn and consists of columns like customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, and Churn, you will need to create a bar graph. This graph should feature Dependents on the x-axis and Churn on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['Dependents'], data=df, hue='Churn')
+plt.show()"
+You will need to create a bar graph with the gender on the x- axis and churn on the y- axis of owndata dataset.,Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['gender'])"
+"Generate a bar chart using the owndata dataset, with gender represented on the horizontal (x-axis) and churn on the vertical (y-axis).",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['gender'])"
+"Create a bar graph utilizing the owndata dataset, plotting gender on the x-axis and churn on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['gender'])"
+"Produce a bar chart based on the owndata dataset, where the x-axis displays gender and the y-axis shows churn.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['gender'])"
+"Construct a bar graph with the owndata dataset, depicting gender on the x-axis and representing churn on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['gender'])"
+"Develop a bar chart for the owndata dataset, where gender is plotted along the x-axis and churn is displayed on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+
+df = owndata
+sns.countplot(x=df['gender'])"
+You will need to create a bar graph with PhoneService on the x- axis and Churn on the y-axis of owndata dataset.,Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['PhoneService'], data=df, hue='Churn')
+plt.show()"
+"Using the owndata dataset, your task is to craft a bar chart where PhoneService is represented on the x-axis, and Churn is displayed on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['PhoneService'], data=df, hue='Churn')
+plt.show()"
+"Create a bar graph with the owndata dataset, placing PhoneService along the x-axis and Churn along the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['PhoneService'], data=df, hue='Churn')
+plt.show()"
+"In the owndata dataset, you are required to generate a bar chart with PhoneService on the x-axis and Churn on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['PhoneService'], data=df, hue='Churn')
+plt.show()"
+"Utilizing the owndata dataset, construct a bar graph where PhoneService is plotted on the horizontal axis (x-axis), and Churn is represented on the vertical axis (y-axis).",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['PhoneService'], data=df, hue='Churn')
+plt.show()"
+"Develop a bar chart based on the owndata dataset, featuring PhoneService on the x-axis and displaying Churn on the y-axis.",Generate a python script to perform this action.,"import pandas as pd  
+import seaborn as sns
+df = owndata
+sns.set_theme(style=""whitegrid"")
+sns.countplot(x=df['PhoneService'], data=df, hue='Churn')
+plt.show()"
